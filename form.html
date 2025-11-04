@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Formulario</title>
+
 </head>
 
 <body>
     <header>
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="MilenaServiceTech" title="Logo">
+        </a>
         <h1>Solicitar Reparación</h1>
     </header>
     <main>
-        <form>
-            <input type="text">
-
-            <input type="">
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Email">
+            <label for="servicio">Tipo de Reparacion:</label>
+            <select name="servicio" id="servicio">
+                <option>Celular</option>
+                <option>Joystick</option>
+            </select>
+            <textarea id="mensaje" name="mensaje" placeholder="Descripción del problema"></textarea>
+            <input type="submit">
         </form>
     </main>
     <footer>
