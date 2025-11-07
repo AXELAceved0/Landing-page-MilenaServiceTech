@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,24 +17,35 @@
             </a>
         </div>
     </header>
-    <main>
-        <h1>Solicitar Reparación</h1>
-        <p>¿Tu dispositivo necesita reparación? ¡Estamos para ayudarte!</p>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Nombre">
-            <input type="email" name="email" placeholder="Email">
-            <label for="servicio">Tipo de Reparacion:</label>
-            <select name="servicio" id="servicio">
-                <option>Celular</option>
-                <option>Joystick</option>
-            </select>
-            <textarea id="mensaje" name="mensaje" placeholder="Descripción del problema"></textarea>
-            <input type="submit">
-        </form>
+    <main class="form-main">
+        <div class="container-div-form">
+            <div class="container-div-title">
+                <h1 class="div-titles">Solicitar Reparación</h1>
+                <p class="div-titles">¿Tu dispositivo necesita reparación?</p>
+                <p class="div-titles">¡Estamos para ayudarte!</p>
+            </div>
+            <div class="div-form">
+                <form action="#" method="post" class="container-form">
+                    <input type="text" name="username" placeholder="Nombre" class="inf" required>
+                    <input type="email" name="email" placeholder="Email" class="inf" required>
+                    <select name="servicio" id="servicio" class="inf" required>
+                        <option value="" disabled selected hidden>Tipo de reparación</option>
+                        <option value="celular">Celular</option>
+                        <option value="joystick">Joystick</option>
+                    </select>
+
+                    <textarea id="mensaje" name="mensaje" placeholder="Descripción del problema" required rows="3"
+                        cols="30"></textarea>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="container-footer">
         <p>© 2025 MilenaServiceTech - Servicio técnico</p>
-        <a href="https://github.com/AXELAceved0" target="_blank"><p>Axel Acevedo</p></a>
+        <a href="https://github.com/AXELAceved0" target="_blank">
+            Axel Acevedo
+        </a>
     </footer>
 </body>
 
