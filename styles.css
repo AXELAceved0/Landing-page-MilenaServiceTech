@@ -21,18 +21,29 @@
 }
 
 .header .container-header .contact {
-    color: #C0C0C0;
+    color: #007BFF;
     text-decoration: none;
-    border: 1px solid #C0C0C0;
-    border-radius: 19px;
-    padding: 9px;
-    transition: all 1s ease-in-out;
+    transition: 1s ease-in-out;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px
+}
+.header .container-header .contact:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    height: 2px;
+    background-color: #007BFF;
+    transition: 1s ease-in-out;
 }
 
-.header .container-header .contact:hover {
-    transform: scale(0.96);
-    background-color: #C0C0C0;
-    color: #1e1e1e;
+
+.header .container-header .contact:hover::after {
+    left: 0;
+    right: 0;
 }
 
 .container-main {
@@ -73,6 +84,32 @@
 
 /* styles FORM */
 
+.header .container-header .return {
+    display: inline-block;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 20px;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    padding: 5px;
+}
+
+.header .container-header .return::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background-color: #007BFF;
+    transition: 1s ease-in-out;
+}
+
+.header .container-header .return:hover:after{
+    left: 0;
+    right: 0;
+}
+
 .form-main {
     display: flex;
     flex-direction: column;
@@ -104,7 +141,7 @@
     height: 25%;
 }
 
-.form-main .container-div-form .container-div-title  .div-titles{
+.form-main .container-div-form .container-div-title .div-titles {
     margin: 10px;
 }
 
@@ -163,7 +200,7 @@
     opacity: 1;
 }
 
-.form-main .container-div-form .container-form .submit{
+.form-main .container-div-form .container-form .submit {
     width: 50%;
     padding: 4px;
     background: #C0C0C0;
@@ -171,11 +208,11 @@
     border-radius: 10px;
     border: none;
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
 
-.form-main .container-div-form .container-form .submit:hover{
+.form-main .container-div-form .container-form .submit:hover {
     transform: scale(0.96);
     background: #9a9797;
 }
