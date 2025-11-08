@@ -247,6 +247,11 @@
         font-size: 15px;
     }
 
+    .form-main{
+        background-image: url("img/fondo-responsive.png");
+        background-size: contain;
+    }
+
     .form-main .container-div-form {
         width: 100%;
     }
