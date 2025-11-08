@@ -85,7 +85,8 @@
 
 .container-footer .container-div a {
     text-decoration: none;
-    color:#E0E0E0;
+    color: #000;
+    cursor: pointer;
 }
 
 /* styles FORM */
@@ -223,18 +224,56 @@
     background: #9a9797;
 }
 
-@media (max-width: 770px){
-    .header .container-header .contact{
+@media (max-width: 770px) {
+    .header .container-header .contact {
         font-size: 15px;
     }
-    .container-main .title-main{
+
+    .container-main .title-main {
         font-size: 16px;
     }
-    .container-main .title-service{
+
+    .container-main .title-service {
         font-size: 12px;
     }
-    .container-footer .container-div{
-        font-size: 12px;
+
+    .container-footer .container-div {
+        font-size: 10px;
         padding: 9px;
+    }
+
+    /* form */
+    .header .container-header .return {
+        font-size: 15px;
+    }
+
+    .form-main .container-div-form {
+        width: 100%;
+    }
+
+    .form-main .container-div-form .container-div-title {
+        font-size: 20px;
+        height: 19%;
+    }
+
+    .form-main .container-div-form .div-form {
+        height: 63%;
+    }
+
+    .form-main .container-div-form .container-form .inf {
+        width: 60%;
+        font-size: 20px;
+        padding: 3px;
+    }
+
+    .form-main .container-div-form .container-form textarea{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .form-main .container-div-form .container-form .submit{
+        font-size: 17px;
+        width: 57%;
+        padding: 3px;
     }
 }
