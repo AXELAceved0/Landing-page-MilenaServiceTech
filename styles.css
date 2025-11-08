@@ -29,7 +29,8 @@
     font-size: 20px;
     padding: 5px
 }
-.header .container-header .contact:after{
+
+.header .container-header .contact:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -72,14 +73,19 @@
 
 .container-footer {
     background-color: #007BFF;
-    color: #E0E0E0
+    color: #E0E0E0;
 }
 
 .container-footer .container-div {
     display: flex;
     justify-content: center;
-    align-items: space-between;
+    font-size: 20px;
+    padding: 5px;
+}
 
+.container-footer .container-div a {
+    text-decoration: none;
+    color:#E0E0E0;
 }
 
 /* styles FORM */
@@ -94,7 +100,7 @@
     padding: 5px;
 }
 
-.header .container-header .return::after{
+.header .container-header .return::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -105,7 +111,7 @@
     transition: 1s ease-in-out;
 }
 
-.header .container-header .return:hover:after{
+.header .container-header .return:hover:after {
     left: 0;
     right: 0;
 }
@@ -215,4 +221,20 @@
 .form-main .container-div-form .container-form .submit:hover {
     transform: scale(0.96);
     background: #9a9797;
+}
+
+@media (max-width: 770px){
+    .header .container-header .contact{
+        font-size: 15px;
+    }
+    .container-main .title-main{
+        font-size: 16px;
+    }
+    .container-main .title-service{
+        font-size: 12px;
+    }
+    .container-footer .container-div{
+        font-size: 12px;
+        padding: 9px;
+    }
 }
